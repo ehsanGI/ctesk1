@@ -10,7 +10,7 @@ public class WeatherServiceHelperTest {
     public void max_temp_should_return_maximum_tempreture() {
         // Given
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        WeatherServiceHelper helper = applicationConfig.controllerHelper();
+        WeatherServiceHelper helper = applicationConfig.weatherServiceHelper();
         WeatherDetails weatherDetails = WeatherDetails.builder().maximumTemperature(11f).build();
 
         // When

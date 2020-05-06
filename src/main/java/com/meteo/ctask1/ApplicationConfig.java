@@ -32,7 +32,7 @@ public class ApplicationConfig {
     }
 
     @Bean
-    public WeatherServiceHelper controllerHelper() {
+    public WeatherServiceHelper weatherServiceHelper() {
         Map<String, Function<WeatherDetails, Object>> getters = new HashMap<>();
         getters.put("max_temp", WeatherDetails::getMaximumTemperature);
         getters.put("min_temp", WeatherDetails::getMinimumTemperature);

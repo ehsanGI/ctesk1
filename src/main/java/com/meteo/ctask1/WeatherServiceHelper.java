@@ -10,7 +10,7 @@ public class WeatherServiceHelper {
 
     private final Map<String, Function<WeatherDetails, Object>> getters;
 
-    public Object valueOf(WeatherDetails weatherDetails, String max_temp) {
-        return getters.get(max_temp).apply(weatherDetails);
+    public Object valueOf(WeatherDetails weatherDetails, String parameter) {
+        return getters.get(parameter).apply(weatherDetails);
     }
 }
